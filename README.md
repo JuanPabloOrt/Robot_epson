@@ -89,7 +89,7 @@ For i = 1 To 9
 		If i < 4 Then
 			Jump Pallet(1, i)
 		ElseIf i < 7 Then
-			Jump Pallet(1, 10 - i)
+			Jump Pallet(1, i)
 		Else
 			Jump Pallet(1, 16 - i)
 		EndIf
@@ -100,8 +100,12 @@ Fend
 
 Con este codigo se obtiene el siguiente movimiento
 
-https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/b50aeb6b-1624-415a-b6b4-c1a7742c4e65
+https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/0e6141a7-b11b-41f7-b7d9-afab29cd8ed6
 
 ## Conclusiones
 
 Con el robot Scara T6 es posible realizar movimientos en cuadriculas respecto a puntos definidos previamente  con todos los parametros conocidos de la robotica como aceleracion, velocidad estandar, y permite que se creen codigos segun el cambio de los movimientos que se deseen.
+
+
+
+
