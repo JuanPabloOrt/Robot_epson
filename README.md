@@ -11,6 +11,10 @@ Juan Pablo Ortiz Mendoza, Theylor Amaya
 
  Este es el resultado de la interfaz.
 ## Movimiento 1
+Inicialmente se establece la posicion home con las siguientes coordenadas
+
+![grafik](https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/00adab86-1106-47c1-9bd1-d7768308fcb6)
+
  Se procede a programar los tres puntos iniciales llamados Origen, Eje y y Ejex como se muestra acontinuación
 
  ![puntos](https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/c23736ca-a1a7-49f5-b936-a0a0a771f948)
@@ -66,7 +70,38 @@ Fend
 Al ejecutar este codigo, se opbtiene el movimiento 2 que se muestra acontinuación
 
 
-
-
 https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/65e5147d-b2df-448e-9a85-e4e8caf4ba89
 
+## Movimiento 3
+
+Ahora se da paso al movimiento 3 donde debera moverse por las cuadricula siguiendo un movimiento continuo, si moverse en diagonales, para esto se creo un bucle for con condicionales if que crea este tipo de movimiento, como se muestra acontinuación. Es importante aclarar que para el movimiento 2 y 3 se utilizo una velocidad de 100%
+
+```
+Function main
+Motor On
+Power High
+Integer i
+Accel 50, 50
+Speed 100
+Home
+Pallet 1, Origen, Ejey, Ejex, 3, 3
+For i = 1 To 9
+		If i < 4 Then
+			Jump Pallet(1, i)
+		ElseIf i < 7 Then
+			Jump Pallet(1, 10 - i)
+		Else
+			Jump Pallet(1, 16 - i)
+		EndIf
+	Next
+Home
+Fend
+```
+
+Con este codigo se obtiene el siguiente movimiento
+
+https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/b50aeb6b-1624-415a-b6b4-c1a7742c4e65
+
+## Conclusiones
+
+Con el robot Scara T6 es posible realizar movimientos en cuadriculas respecto a puntos definidos previamente  con todos los parametros conocidos de la robotica como aceleracion, velocidad estandar, y permite que se creen codigos segun el cambio de los movimientos que se deseen.
