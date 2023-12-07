@@ -16,7 +16,7 @@ Juan Pablo Ortiz Mendoza, Theylor Amaya
  ![puntos](https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/c23736ca-a1a7-49f5-b936-a0a0a771f948)
 
  Con estos puntos se realiza el primer movimient0o con el siguiente codigo como se practicó en la capacitación
-´´´
+''' 
 Function main
 Motor On
 Power Low
@@ -37,7 +37,7 @@ Function Movimiento1
 	Go Ejey
 	
 Fend
-´´´
+'''
 
  
 
