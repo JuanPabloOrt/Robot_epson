@@ -106,6 +106,12 @@ https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/0e6141a7-b11b-41f7-
 
 Con el robot Scara T6 es posible realizar movimientos en cuadriculas respecto a puntos definidos previamente  con todos los parametros conocidos de la robotica como aceleracion, velocidad estandar, y permite que se creen codigos segun el cambio de los movimientos que se deseen.
 
+A continuacion se muestra un video que se realizó en las instalaciones del robnot real en funcionamiento como una rejilla.
 
 
+
+
+
+
+https://github.com/JuanPabloOrt/Robot_epson/assets/144562439/d92b3fc1-4fbb-41b4-a94a-811e82cb070c
 
